@@ -21,6 +21,11 @@ The path introduced the basics of APIs, the Postman platform, and making first A
 * REST API
 * JSON
 
+## Files
+
+- `collections/` — exported Postman collection from guided practice
+- `environments/` — exported Postman environment used during practice, without sensitive data
+
 ## Learning Context
 
 This is a beginner-level guided practice folder created as part of my QA learning journey. It documents my first practical exposure to API requests and basic Postman workflows.
