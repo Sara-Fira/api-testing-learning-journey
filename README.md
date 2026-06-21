@@ -1,48 +1,36 @@
-# Postman Academy API Testing Practice
+# API Testing Learning Journey
 
-This repository contains my guided API testing practice completed as part of the **Postman Academy API Testing Path**.
+This repository documents my learning progress in API testing with Postman as part of my transition into QA.
 
-The purpose of this repository is to document my learning progress and show practical exposure to API testing with Postman.
+The goal of this repository is to practice API testing fundamentals, understand how REST APIs work, and build practical familiarity with Postman as a testing tool.
 
-## Scope
+## Purpose
 
-During this guided practice, I worked with basic API testing concepts, including:
+This repository focuses on learning and practicing:
 
-* REST API requests
+* REST API basics
+* API requests and responses
 * HTTP methods
-* endpoints
-* request parameters
-* request body
-* response body
 * status codes
-* JSON responses
+* JSON response analysis
+* query parameters
+* request headers
+* request body
 * Postman collections
-* basic API test organization
+* basic positive and negative API checks
+* API testing documentation
 
-## Tools
+## Tools and Technologies
 
 * Postman
 * REST API
 * JSON
+* Git
 * GitHub
+* Markdown
 
-## What I practiced
+## Learning Context
 
-As part of the guided Postman Academy exercises, I practiced:
+This repository is part of my QA learning portfolio. It supports my development in manual testing and API testing by showing practical exposure to Postman, REST APIs, JSON responses, and basic API validation.
 
-* sending API requests in Postman
-* reading API responses
-* checking status codes
-* understanding JSON response structure
-* organizing requests into Postman collections
-* documenting API testing practice for my QA learning portfolio
-
-## Repository structure
-
-* `collections/` — exported Postman collections from guided practice
-* `environments/` — exported Postman environments, if used, without sensitive data
-* `notes/` — short notes from API testing practice
-
-## Note
-
-This is a learning repository based on guided exercises from Postman Academy. It is part of my transition into QA and is intended to demonstrate hands-on practice with API testing fundamentals.
+Some materials in this repository are based on guided practice from learning platforms such as Postman Academy. They are included to document my learning progress and hands-on practice with API testing fundamentals.
