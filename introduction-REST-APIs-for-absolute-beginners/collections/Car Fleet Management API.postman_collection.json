@@ -1,0 +1,242 @@
+{
+  "info": {
+    "_postman_id": "baee8b59-ae2d-4570-8e1d-6d99d2de4cca",
+    "name": "Car Fleet Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56014745",
+    "_collection_link": "https://go.postman.co/collection/56014745-baee8b59-ae2d-4570-8e1d-6d99d2de4cca?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "PUT Update car",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"id\": 1,\r\n        \"manufacturer\": \"Ford\",\r\n        \"model\": \"Model T\",\r\n        \"build\": 1920\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/cars",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET a single car",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/cars/:carID",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars",
+            ":carID"
+          ],
+          "variable": [
+            {
+              "key": "carID",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET all repairs",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/cars/:carid/repairs",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars",
+            ":carid",
+            "repairs"
+          ],
+          "variable": [
+            {
+              "key": "carid",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET a repair for a car",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/cars/:carID/repairs/:repairID",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars",
+            ":carID",
+            "repairs",
+            ":repairID"
+          ],
+          "variable": [
+            {
+              "key": "carID",
+              "value": "1"
+            },
+            {
+              "key": "repairID",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Add a new car",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"build\": 2019,\r\n  \"id\": 0,\r\n  \"manufacturer\": \"Toyota\",\r\n  \"model\": \"Prius\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/cars",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Add a repair",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"carId\": 5,\r\n  \"description\": \"Tire replacement\",\r\n  \"id\": 0,\r\n  \"repair_date\": \"2026-06-27T16:57:17.291Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/cars/repairs",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars",
+            "repairs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Add a repair with carID",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"carId\": 1,\r\n  \"description\": \"Engine replacement\",\r\n  \"id\": 9,\r\n  \"repair_date\": \"2026-06-27T16:45:08.583Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/cars/:carID/repairs",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars",
+            ":carID",
+            "repairs"
+          ],
+          "variable": [
+            {
+              "key": "carID",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE a car",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/cars/:carID",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "cars",
+            ":carID"
+          ],
+          "variable": [
+            {
+              "key": "carID",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
